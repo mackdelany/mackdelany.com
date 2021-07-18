@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Do you always read the comment section?-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <div class="home-header">
+      <img
+        src="static/imgs/me_whiteboard.jpeg"
+        class="rounded-circle whiteboard-photo img-fluid"
+        alt="Mack Delany"
+      />
+      <div class="header-titles">
+        <h1>Understand Machine Learning in 6 Minutes</h1>
+        <h5>
+          I wrote this to (attempt to) explain ML to friends+family, apparently
+          they enjoyed it
+        </h5>
+      </div>
+    </div>
+    <div class="body-text">
+      <p>After reading this post,</p>
+      <ol>
+        <li>
+          You'll have a high-level understanding of what Machine Learning is and
+          how it works
+        </li>
+        <li>
+          You'll be able to consider what's possible with Machine Learning
+          within your business or sector
+        </li>
+      </ol>
+      <p>
+        If that's worth six minutes of your time - then jump on down the page…
+      </p>
+      <img
+        src="static/imgs/time_to_learn.jpeg"
+        class="img-fluid centre-image"
+        alt="Time to learn about Machine Learning"
+      />
+      <h3>Setting the scene</h3>
+      <p>
+        In theory, software programs will do the same thing every time they run.
+        This is because the actions they take are explicitly programmed.
+        Opposingly, machine learning programs will attempt to improve their
+        performance in relation to a goal as they gain experience. This is
+        because only the goal is explicitly programmed, the actions they take
+        are implicit. Most people think machine learning relies on fancy
+        algorithms. That's maybe 40% true - while you need the algorithms, they
+        aren't the fundamental driver of performance or what's possible. What
+        matters is the data which the algorithms use to learn.
+      </p>
+      <h3>How to think about data</h3>
+      <p>
+        Loosely speaking, data is just stored information. In the real world, we
+        can classify collections of data as either structured or unstructured.
+        Machine learning can be applied with both structured and unstructured
+        data - but it's important to understand the difference.
+      </p>
+      <h5>Structured Data</h5>
+      <p>
+        Structured data lives in a table consisting of rows and columns. For
+        example:
+      </p>
+      <img
+        src="static/imgs/structured_data_1.png"
+        class="img-fluid centre-image"
+        alt="Example of structured data"
+      />
+      <p class="image-caption">
+        <i>You'll also hear 'tabular data' as a reference to structured data</i>
+      </p>
+      <h5>Unstructured Data</h5>
+      <p>
+        Unstructured data is everything that doesn't live in a table of rows and
+        columns. But don't fret, just because it has less structure, doesn't
+        mean we can't use it for machine learning. Common examples of
+        unstructured data include:
+      </p>
+      <ul>
+        <li>Text</li>
+        <li>Images</li>
+        <li>Videos</li>
+        <li>Voice recordings</li>
+        <li>Documents (eg 1000s of PDFs)</li>
+      </ul>
+      <h3>Types of Machine Learning</h3>
+      <p>Machine learning programs fall into one of three families:</p>
+      <ol>
+        <li>
+          <i><b>Supervised learning</b></i
+          >, where our algorithm is given examples of the target answer we want
+          to predict
+        </li>
+        <li>
+          <i><b>Unsupervised learning</b></i
+          >, where our algorithm doesn't have examples of the answer to learn
+          from, but rather generates new findings from the data
+        </li>
+        <li>
+          <i><b>Reinforcement learning</b></i
+          >, where a machine is exposed to a new environment and asked to learn
+          from trial and error
+        </li>
+      </ol>
+      <p>
+        Supervised learning is far and away the most utilized framework in the
+        world today. If you're starting to look at potential applications of
+        machine learning - then supervised learning should be your first port of
+        call. Don't sleep on unsupervised learning though, it has specific use
+        cases which we'll gloss over shortly. Meanwhile, reinforcement learning
+        is a still-emerging framework currently most
+        <a href="https://www.youtube.com/watch?v=8tq1C8spV_g"
+          >well known for beating humans in complex games.</a
+        >
+      </p>
+      <h3>Supervised Learning with Structured Data</h3>
+      <p>
+        It's all in the name, our model needs to <i><b>learn</b></i> how to find
+        the target variable before it will <i><b>know</b></i> how to find the
+        variable. The machine needs a dataset to learn from, and that dataset
+        must contain the target variable. Let's pretend we're training an
+        algorithm to predict an animal's maximum lifespan. We could use our
+        dataset from before:
+      </p>
+      <img
+        src="static/imgs/structured_data_2.png"
+        class="img-fluid centre-image"
+        alt="Example of structured data"
+      />
+      <p>
+        Our algorithm would go to work examining the relationships between the
+        yellow dependent variables and the green target variables. Once trained,
+        we could test our robot on new data that it hadn't seen before.
+      </p>
+      <img
+        src="static/imgs/structured_data_3.png"
+        class="img-fluid centre-image"
+        alt="Trained machine learning model"
+      />
+      <p>
+        If our training data was good, then our algorithm will predict the
+        maximum lifespan of an animal (our target variable) with a high degree
+        of accuracy.
+      </p>
+      <h3>Supervised Learning with Unstructured Data</h3>
+      <p>
+        It's the same logic for images and other unstructured data. We can train
+        a machine to look for something, but first, we need to tell it what to
+        look for. Give an algorithm a few thousand labeled cat and dog photos,
+        and it'll pretty quickly work out how to classify your local household
+        animals.
+      </p>
+      <img
+        src="static/imgs/cats_and_dogs.jpeg"
+        class="img-fluid centre-image"
+        alt="Cats and dogs"
+      />
+      <p class="image-caption">
+        <i>Welcome to the most cliche machine learning example possible</i>
+      </p>
+      <p>
+        This applies for image sentiment, facial recognition, or any other image
+        classification problem. Again, data quality is by far the most important
+        contributor to success. Training the model is relatively easy given a
+        high quality labeled dataset.
+      </p>
+      <h3>Unsupervised Learning</h3>
+      <p>
+        Unsupervised machine learning algorithms examine patterns in the data to
+        identify new trends. A common example is clustering, where an algorithm
+        will identify groups within the dataset that we weren't previously aware
+        of.
+      </p>
+      <img
+        src="static/imgs/unsupervised_learning.png"
+        class="img-fluid centre-image"
+        alt="Clustering"
+      />
+      <p>
+        Unsupervised learning can be extremely useful in specific use cases.
+        Well known examples include:
+      </p>
+      <ul>
+        <li>Detecting dangerous anomalies in an aircraft engine</li>
+        <li>
+          Clustering customers into different cohorts based on unique behaviors
+        </li>
+        <li>Detecting odd, and potentially fraudulent bank transactions</li>
+      </ul>
+      <h3>Reinforcement Learning</h3>
+      <p>
+        Reinforcement learning involves an algorithm in a dynamic environment,
+        such as a video game or as the controller of an energy system. The
+        algorithm is able to explore and try different actions - it is rewarded
+        for positive decisions, and penalized for negative ones. In a general
+        sense, reinforcement learning artificially replicates a human's ability
+        to learn by trial and error.
+      </p>
+      <img
+        src="static/imgs/reinforcement_learning.png"
+        class="img-fluid centre-image"
+        alt="Reinforcement learning"
+      />
+      <p class="image-caption">
+        <i>Humans learn from their mistakes right?</i>
+      </p>
+      <p>
+        Although real-world applications are emerging, reinforcement learning is
+        largely centered in the research world. The AlphaGo documentary is a
+        fantastic watch for those interested in the accelerating development of
+        reinforcement learning and artificial intelligence.
+      </p>
+      <h3>Thinking about what's possible</h3>
+      <p>
+        Now that we've completed Machine Learning 101, we can start to think
+        about potential machine learning applications.
+      </p>
+      <h5>X Marks the Spot</h5>
+      <p>
+        The first question to ask is, what's the target? What do we want to
+        know? Some examples of target variables we could select:
+      </p>
+      <ul>
+        <li>Temperature -> predicting daily maximum temperatures</li>
+        <li>
+          Species -> predicting what species an animal in a photo belongs to
+        </li>
+        <li>
+          Price -> predicting what price will maximize profit from a product or
+          business
+        </li>
+      </ul>
+      <p>
+        Once we have a target, we can start to structure a relevant dataset. For
+        example, if predicting temperature, we would gather historical weather
+        data. Or if identifying species, we'd look for as many animal photos as
+        possible.
+      </p>
+      <h5>Measuring uncertainty</h5>
+      <p>
+        It's easy to see there are limitless applications of machine learning.
+        It's harder to tell which potential projects will be successful. After
+        determining a target, new, harder questions emerge - to mention a few:
+      </p>
+      <ul>
+        <li>Do we have enough data that accurately represents the target?</li>
+        <li>
+          Are there biases in our data which we don't want our model to learn?
+        </li>
+        <li>
+          Will our algorithm perform better than a human? Does it need to?
+        </li>
+      </ul>
+      <p>
+        As you can imagine, these questions can rarely be answered at the outset
+        of a project. But that doesn't mean they're not worth asking. It's
+        important to understand the assumptions you're making before you commit
+        to experimentation. However, while planning and risk assessment are
+        important, you'll never know how successful your project is going to be.
+        Or how long it will take. Or whether your data carries unwanted bias. At
+        some point, you have to acknowledge the uncertainty and jump in. That's
+        the fun part.
+      </p>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>

@@ -6,12 +6,39 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.whiteboard-photo {
+.centre-image {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.youtube {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-caption {
+  text-align: center;
+}
+
+.header-photo {
   display: block;
   width: auto;
   height: auto;
   max-height: 240px;
   margin: 20px;
+}
+
+.stan-header {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 150px;
+  margin: 40px;
 }
 
 .home-header {
