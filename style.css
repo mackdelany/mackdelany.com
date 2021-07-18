@@ -14,11 +14,7 @@ body {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.youtube {
-  display: block;
-  margin: 0 auto;
+  max-width: 600px;
 }
 
 .image-caption {
@@ -69,9 +65,36 @@ body {
   margin-left: 20%;
 }
 
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 600px) {
   .body-text {
     margin-right: 10%;
     margin-left: 10%;
+  }
+  .header-photo {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .centre-image {
+    max-width: 300px;
+  }
+  .iframe-youtube {
+    max-width: 300px;
   }
 }
