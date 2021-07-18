@@ -6,24 +6,21 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-h1 {
-  color: black;
-}
-
 .whiteboard-photo {
   display: block;
   width: auto;
   height: auto;
-  max-height: 280px;
+  max-height: 240px;
   margin: 20px;
 }
 
 .home-header {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  color: #ffffff;
+  background-color: #0f1b07;
 }
 
 @media (max-width: 600px) {
