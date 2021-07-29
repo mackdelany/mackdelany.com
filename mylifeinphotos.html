@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
   <body>
     <script
@@ -38,16 +39,17 @@
         here?
       </p>
       <p>
-        I'm planning to come back and make this page more of a *random memory
-        generator* but for now it's just an image dump. Albeit a pretty good
-        image dump.
+        The photos render in a different order every time the page is loaded.
+        Random memory generation for the win! I'm hoping to drop >1000s of
+        photos in here over my lifetime... the I can time travel my golden years
+        at random when I'm in my 100s!
       </p>
       <p>
         (and sorry that some of the images are pixel-y, I didn't format them
         properly on my first pass)
       </p>
       <div class="memory-generator-body">
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Figuring_it_all_out.jpeg"
             alt="Figuring it all out"
@@ -55,7 +57,7 @@
           />
           Figuring it all out
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Early_morrocan_run_with_Zanos.jpeg"
             alt="Early morrocan run with Zanos"
@@ -63,7 +65,7 @@
           />
           Early morrocan run with Zanos
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Simon_took_us_to_the_UN_for_a_major_security_council_meeting.jpeg"
             alt="Simon took us to the UN for a major security council meeting"
@@ -71,7 +73,7 @@
           />
           Simon took us to the UN for a major security council meeting
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/On_top_of_the_Alps_(the_french_ones).jpeg"
             alt="On top of the Alps (the french ones)"
@@ -79,7 +81,7 @@
           />
           On top of the Alps (the french ones)
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Stu_eyes_open_Mack_eyes_shut.jpeg"
             alt="Stu eyes open Mack eyes shut"
@@ -87,7 +89,7 @@
           />
           Stu eyes open Mack eyes shut
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Monthly_roomie_dinner_at_252_Grand_St.jpeg"
             alt="Monthly roomie dinner at 252 Grand St"
@@ -95,7 +97,7 @@
           />
           Monthly roomie dinner at 252 Grand St
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Staying_in_Belgrade_with_Finn.jpeg"
             alt="Staying in Belgrade with Finn"
@@ -103,7 +105,7 @@
           />
           Staying in Belgrade with Finn
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Partizan_v_Red_Star_maybe_the_craziest_game_I've_seen_in_person.jpeg"
             alt="Partizan v Red Star maybe the craziest game I've seen in person"
@@ -111,7 +113,7 @@
           />
           Partizan v Red Star maybe the craziest game I've seen in person
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Hell_of_a_day_at_TC.jpeg"
             alt="Hell of a day at TC"
@@ -119,7 +121,7 @@
           />
           Hell of a day at TC
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/CarbonCrop_office_<3_table_tennis.jpeg"
             alt="CarbonCrop office <3 table tennis"
@@ -127,7 +129,7 @@
           />
           CarbonCrop office <3 table tennis
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Vatican_run_with_Dad.jpeg"
             alt="Vatican run with Dad"
@@ -135,7 +137,7 @@
           />
           Vatican run with Dad
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/crispy_balcony.jpeg"
             alt="crispy balcony"
@@ -143,7 +145,7 @@
           />
           crispy balcony
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Glass_Animals_in_Cooperstown.jpeg"
             alt="Glass Animals in Cooperstown"
@@ -151,7 +153,7 @@
           />
           Glass Animals in Cooperstown
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Talking_shop_in_the_carpark_pre_gig.jpeg"
             alt="Talking shop in the carpark pre gig"
@@ -159,7 +161,15 @@
           />
           Talking shop in the carpark pre gig
         </div>
-        <div>
+        <div class="memory-generator-card">
+          <img
+            src="static/imgs/life/Rollar_disco_at_THE_HOUSE_OF_YES.jpeg"
+            alt="Rollar disco at THE HOUSE OF YES"
+            class="memory-generator-img"
+          />
+          Rollar disco at THE HOUSE OF YES
+        </div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Sahara_moon_in_Morroco.jpeg"
             alt="Sahara moon in Morroco"
@@ -167,7 +177,7 @@
           />
           Sahara moon in Morroco
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Fanboying_Finn_with_Harry_and_Billy.jpeg"
             alt="Fanboying Finn with Harry and Billy"
@@ -175,7 +185,7 @@
           />
           Fanboying Finn with Harry and Billy
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/I_only_included_this_one_because_LOOK_AT_JIMMYS_HAIR.jpeg"
             alt="I only included this one because LOOK AT JIMMYS HAIR"
@@ -183,7 +193,7 @@
           />
           I only included this one because LOOK AT JIMMYS HAIR
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/No_place_like_home.jpeg"
             alt="No place like home"
@@ -191,7 +201,7 @@
           />
           No place like home
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Tahuna_beach_always_an_underrated_sunset!.jpeg"
             alt="Tahuna beach always an underrated sunset!"
@@ -199,7 +209,7 @@
           />
           Tahuna beach always an underrated sunset!
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/A_pie_I_made_with_pie_written_on_it.jpeg"
             alt="A pie I made with pie written on it"
@@ -207,7 +217,7 @@
           />
           A pie I made with pie written on it
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Walking_to_get_my_social_security_number_2_months_after_landing_in_NYC.jpeg"
             alt="Walking to get my social security number 2 months after landing in NYC"
@@ -215,7 +225,7 @@
           />
           Walking to get my social security number 2 months after landing in NYC
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Pretending_to_know_how_to_fish.jpeg"
             alt="Pretending to know how to fish"
@@ -223,7 +233,7 @@
           />
           Pretending to know how to fish
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Morning_Moroccan_run_with_Zanos.jpeg"
             alt="Morning Moroccan run with Zanos"
@@ -231,7 +241,7 @@
           />
           Morning Moroccan run with Zanos
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Dad_at_about_my_age.jpeg"
             alt="Dad at about my age"
@@ -239,7 +249,7 @@
           />
           Dad at about my age
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Highway_101_with_Freddo.jpeg"
             alt="Highway 101 with Freddo"
@@ -247,7 +257,7 @@
           />
           Highway 101 with Freddo
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/The_Hermannstraße_crew_at_Kristys_Xmas_party.jpeg"
             alt="The Hermannstraße crew at Kristys Xmas party"
@@ -255,7 +265,7 @@
           />
           The Hermannstraße crew at Kristys Xmas party
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Paparoa_with_Jimmy.jpeg"
             alt="Paparoa with Jimmy"
@@ -263,7 +273,7 @@
           />
           Paparoa with Jimmy
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Zion,_from_the_top_of_Angels_Landing.jpeg"
             alt="Zion, from the top of Angels Landing"
@@ -271,7 +281,7 @@
           />
           Zion, from the top of Angels Landing
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/home_office.jpeg"
             alt="home office"
@@ -279,7 +289,7 @@
           />
           home office
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Shoes_<3.jpeg"
             alt="Shoes <3"
@@ -287,7 +297,7 @@
           />
           Shoes <3
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Barbardos_with_Ruth.jpeg"
             alt="Barbardos with Ruth"
@@ -295,7 +305,7 @@
           />
           Barbardos with Ruth
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Mack_eyes_shut_Marco_eyes_shut.jpeg"
             alt="Mack eyes shut Marco eyes shut"
@@ -303,7 +313,7 @@
           />
           Mack eyes shut Marco eyes shut
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Somewhere_west_of_Salt_Lake.jpeg"
             alt="Somewhere west of Salt Lake"
@@ -311,7 +321,7 @@
           />
           Somewhere west of Salt Lake
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Approaching_the_ Hermannsdalstinden_summit.jpeg"
             alt="Approaching the  Hermannsdalstinden summit"
@@ -319,7 +329,7 @@
           />
           Approaching the Hermannsdalstinden summit
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Strolling.jpeg"
             alt="Strolling"
@@ -327,7 +337,7 @@
           />
           Strolling
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Bryce_Canyon,_highly_recommend!.jpeg"
             alt="Bryce Canyon, highly recommend!"
@@ -335,7 +345,7 @@
           />
           Bryce Canyon, highly recommend!
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Business_in_the_Venetian,_Las_Vegas.jpeg"
             alt="Business in the Venetian, Las Vegas"
@@ -343,7 +353,7 @@
           />
           Business in the Venetian, Las Vegas
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Finn_the_warrior_of_the_family.jpeg"
             alt="Finn the warrior of the family"
@@ -351,7 +361,7 @@
           />
           Finn the warrior of the family
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Mish_Guru_team_day_go_the_gurus!.jpeg"
             alt="Mish Guru team day go the gurus!"
@@ -359,7 +369,7 @@
           />
           Mish Guru team day go the gurus!
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Rozza_never_forgets_the_treats.jpeg"
             alt="Rozza never forgets the treats"
@@ -367,7 +377,7 @@
           />
           Rozza never forgets the treats
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/A_legend_(Tim)_on_a_ledge.jpeg"
             alt="A legend (Tim) on a ledge"
@@ -375,7 +385,7 @@
           />
           A legend (Tim) on a ledge
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/bygate_and_mack_in_lisbon.jpeg"
             alt="bygate and mack in lisbon"
@@ -383,7 +393,7 @@
           />
           bygate and mack in lisbon
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/A_lovely_lunch.jpeg"
             alt="A lovely lunch"
@@ -391,7 +401,7 @@
           />
           A lovely lunch
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Crazy_dunedin_sunset_this_blew_my_mind_at_the_time!.jpeg"
             alt="Crazy dunedin sunset this blew my mind at the time!"
@@ -399,7 +409,7 @@
           />
           Crazy dunedin sunset this blew my mind at the time!
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Not_bad_for_a_Cardies_day.jpeg"
             alt="Not bad for a Cardies day"
@@ -407,7 +417,7 @@
           />
           Not bad for a Cardies day
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Skipping_stones_with_Tim.jpeg"
             alt="Skipping stones with Tim"
@@ -415,7 +425,7 @@
           />
           Skipping stones with Tim
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Northern_Lights_September_2019.jpeg"
             alt="Northern Lights September 2019"
@@ -423,7 +433,7 @@
           />
           Northern Lights September 2019
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Rainy_Rocks_Road_run.jpeg"
             alt="Rainy Rocks Road run"
@@ -431,7 +441,7 @@
           />
           Rainy Rocks Road run
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Good_view_better_company.jpeg"
             alt="Good view better company"
@@ -439,7 +449,7 @@
           />
           Good view better company
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Yes,_I_do_regret_my_face_in_this_one.jpeg"
             alt="Yes, I do regret my face in this one"
@@ -447,7 +457,7 @@
           />
           Yes, I do regret my face in this one
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Old_friends_in_new_places!.jpeg"
             alt="Old friends in new places!"
@@ -455,7 +465,7 @@
           />
           Old friends in new places!
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Covid_travelling.jpeg"
             alt="Covid travelling"
@@ -463,7 +473,7 @@
           />
           Covid travelling
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/The_Hamptons_5.jpeg"
             alt="The Hamptons 5"
@@ -471,7 +481,7 @@
           />
           The Hamptons 5
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Posing.jpeg"
             alt="Posing"
@@ -479,7 +489,7 @@
           />
           Posing
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Used_to_have_a_fascination_with_wearing_two_pairs_of_socs.jpeg"
             alt="Used to have a fascination with wearing two pairs of socs"
@@ -487,7 +497,7 @@
           />
           Used to have a fascination with wearing two pairs of socs
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Best_mates.jpeg"
             alt="Best mates"
@@ -495,7 +505,7 @@
           />
           Best mates
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/About_the_time_I_fell_in_love_with_EVs.jpeg"
             alt="About the time I fell in love with EVs"
@@ -503,7 +513,7 @@
           />
           About the time I fell in love with EVs
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Frosty_morning_after_a_night_in_the_Mt_Robert_ski_bivvy.jpeg"
             alt="Frosty morning after a night in the Mt Robert ski bivvy"
@@ -511,7 +521,7 @@
           />
           Frosty morning after a night in the Mt Robert ski bivvy
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/BYGATE_BYGATE_BYGATE_BYGATE.jpeg"
             alt="BYGATE BYGATE BYGATE BYGATE"
@@ -519,7 +529,7 @@
           />
           BYGATE BYGATE BYGATE BYGATE
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Lots_of_deep_photos_of_you_here_Tim?.jpeg"
             alt="Lots of deep photos of you here Tim?"
@@ -527,7 +537,7 @@
           />
           Lots of deep photos of you here Tim?
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Approaching_Angels_Landing_in_Zion.jpeg"
             alt="Approaching Angels Landing in Zion"
@@ -535,7 +545,7 @@
           />
           Approaching Angels Landing in Zion
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Macklemore_and_Ryan_Lewis.jpeg"
             alt="Macklemore and Ryan Lewis"
@@ -543,7 +553,7 @@
           />
           Macklemore and Ryan Lewis
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/I_used_to_really_need_a_haircut.jpeg"
             alt="I used to really need a haircut"
@@ -551,7 +561,7 @@
           />
           I used to really need a haircut
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/The_burg____miss_you_Brooklyn.jpeg"
             alt="The burg    miss you Brooklyn"
@@ -559,7 +569,7 @@
           />
           The burg miss you Brooklyn
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Staying_at_TLs_in_hokitika.jpeg"
             alt="Staying at TLs in hokitika"
@@ -567,7 +577,7 @@
           />
           Staying at TLs in hokitika
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/My_local_running_route_at_Tempolhof.jpeg"
             alt="My local running route at Tempolhof"
@@ -575,7 +585,7 @@
           />
           My local running route at Tempolhof
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Central_Park_date_with_Henry.jpeg"
             alt="Central Park date with Henry"
@@ -583,7 +593,7 @@
           />
           Central Park date with Henry
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Used_to_think_I_could_pull_off_a_singlet?.jpeg"
             alt="Used to think I could pull off a singlet?"
@@ -591,7 +601,7 @@
           />
           Used to think I could pull off a singlet?
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Christmas_in_New_York_with_Jimmy.jpeg"
             alt="Christmas in New York with Jimmy"
@@ -599,7 +609,7 @@
           />
           Christmas in New York with Jimmy
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/The_extraordinary_world_renowned_Harvey_platter.jpeg"
             alt="The extraordinary world renowned Harvey platter"
@@ -607,7 +617,7 @@
           />
           The extraordinary world renowned Harvey platter
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Kristys_window_and_my_favorite_intersection.jpeg"
             alt="Kristys window and my favorite intersection"
@@ -615,7 +625,7 @@
           />
           Kristys window and my favorite intersection
         </div>
-        <div>
+        <div class="memory-generator-card">
           <img
             src="static/imgs/life/Amalfi_family_hijinx.jpeg"
             alt="Amalfi family hijinx"
@@ -638,5 +648,6 @@
         ><br />
       </p>
     </div>
+    <script type="text/javascript" src="src/shuffleElements.js"></script>
   </body>
 </html>
