@@ -111,4 +111,7 @@ body {
   .iframe-youtube {
     max-width: 300px;
   }
+  .memory-generator-img {
+    max-width: 320px;
+  }
 }
